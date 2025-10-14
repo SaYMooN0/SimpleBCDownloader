@@ -16,19 +16,19 @@ public static class AppLogger
 
     // tried to repoduce ILogger format 
 
-    public static void IntermediateSuccess(string messageTemplate, params object[] args)
-        => Log(Level.IntermediateSuccess, messageTemplate, args);
+    public static void IntermediateSuccess(string msg, params object[] args)
+        => Log(Level.IntermediateSuccess, msg, args);
 
 
-    public static void Success(string messageTemplate, params object[] args)
-        => Log(Level.Success, messageTemplate, args);
+    public static void Success(string msg, params object[] args)
+        => Log(Level.Success, msg, args);
 
 
-    public static void Warning(string messageTemplate, params object[] args)
-        => Log(Level.Warning, messageTemplate, args);
+    public static void Warning(string msg, params object[] args)
+        => Log(Level.Warning, msg, args);
 
-    public static void Error(string messageTemplate, params object[] args)
-        => Log(Level.Error, messageTemplate, args);
+    public static void Error(string msg, params object[] args)
+        => Log(Level.Error, msg, args);
 
 
     private static void Log(Level level, string messageTemplate, params object[] args) {
